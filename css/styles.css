@@ -1,7 +1,10 @@
 /* headerクラス */
 .header {
+  float:left;
+  width: 100vw;
   position:relative;
   z-index: 1;
+  background: #fff;
 }
 
 .header-show {
