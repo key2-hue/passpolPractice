@@ -22,13 +22,24 @@
 
 .main {
   height: 695px;
-  background: #f6f6f6;
   background-image: url("https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_13-0x0.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-bottom-left-radius: 300px 22px;
   border-bottom-right-radius: 400px 20px;
+}
+
+.main::after {
+  content: '';
+  height: 695px;
+  background: #f6f6f6;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45px;
+  bottom: 0;
+  z-index: -1;
 }
 
 .brand > img {
@@ -49,22 +60,133 @@
 /* conceptクラス */
 
 .concept {
-  height: 1000px;
+  height: 900px;
   background: #f6f6f6;
-  position: relative;
-  bottom: 20px;
+  /* position: relative;
+  bottom: 20px; */
   z-index: -1;
 }
 
 .journey {
-  width: 300px;
+  width: 370px;
   margin: 0 auto;
   position: relative;
-  top: 100px;
+  top: 130px;
 }
 
 .journey > h2 {
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
   letter-spacing: 2px;
+  position: relative;
+  left: 10px;
+}
+
+.journey > p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.journey > p:first-of-type {
+  margin-top: 50px;
+}
+
+.journey > p:not(:first-of-type) {
+  padding-top: 15px;
+}
+
+.journey > img {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+}
+
+/* productクラス */
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.product-left {
+  margin-left: 35px;
+}
+
+.product-left > p {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.product-left > img {
+  display: block;
+  width: 70px;
+  margin-top: 10px;
+}
+
+.product-right {
+  border: 1px solid black;
+  width: 160px;
+  margin-right: 40px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.product-right:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.product-right > p {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.right-arrow {
+  position: relative;
+  left: 40px;
+  /* font-size: 20px; */
+}
+
+.product-main {
+  margin-top: 40px;
+}
+
+.product-main > div {
+  display: flex;
+  width: calc(100vw - 30px);
+  margin: 0 auto;
+}
+
+.product-main > div:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.book-one > img,
+.book-two > img,
+.book-three > img,
+.book-four > img,
+.book-five > img,
+.book-six > img {
+  display: block;
+  width: calc(100vw * 0.3);
+  margin-left: 20px;
+}
+
+.book-one > p,
+.book-two > p,
+.book-three > p,
+.book-four > p,
+.book-five > p,
+.book-six > p {
+  margin: 30px 0 0 25px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: calc(100vw - (100vw * 0.3 + 90px));
 }
