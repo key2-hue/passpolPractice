@@ -1,4 +1,9 @@
 /* headerクラス */
+.header {
+  position:relative;
+  z-index: 1;
+}
+
 .header-show {
   height: 45px;
   background: #fff;
@@ -10,6 +15,11 @@
 .header-none {
   z-index: 1;
   position:relative;
+  height: 200px;
+}
+
+.header-none > ul {
+  display: block;
 }
 
 .show {
