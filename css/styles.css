@@ -1,5 +1,5 @@
 /* headerクラス */
-.header {
+.header-show {
   height: 45px;
   background: #fff;
   display:flex;
@@ -7,13 +7,26 @@
   align-items: center;
 }
 
-.header > p {
+.header-none {
+  z-index: 1;
+  position:relative;
+}
+
+.show {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.header-show > p {
   font-size: 12px;
   margin-left: 45px;
   letter-spacing: 1px;
 }
 
-.header > i {
+.header-show > i {
   margin-right: 45px;
 }
 
@@ -393,4 +406,25 @@
 
 .hatena:hover {
   background: #2f9bcd;
+}
+
+/* informationクラス */
+
+.information {
+  background: #939899;
+  height: 90px;
+}
+
+.information-category {
+ display: flex;
+ height: 90px;
+ align-items: center;
+ width: 450px;
+ margin: 0 auto;
+ justify-content: space-between;
+}
+
+.information-category > li {
+  color: white;
+  font-size: 15px;
 }
