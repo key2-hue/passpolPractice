@@ -8,5 +8,5 @@ $(function(){
       $('.header-none').slideUp('slow');
       // $('.main').css({'position':'relative', 'top': '200px' });
     }
-  })
+  });
 });
